@@ -1,0 +1,35 @@
+<mvc:View controllerName="fiori.fundamentos.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{dados>/tituloPagina}" showNavButton="true" >
+
+        <headerContent>
+            <Button type="Success" />
+        </headerContent>
+
+        <subHeader>
+            <OverflowToolbar>
+                <Button type="Attention" />        
+            </OverflowToolbar>
+        </subHeader>
+
+        <content>
+            <List items="{dados>/employees}"
+                  mode="SingleSelectMaster" 
+                  itemPress="aoPressionarFuncionario"> 
+                <items>
+                    <StandardListItem  title="{dados>name}" description="{dados>id}" type="Active" />
+                </items>
+            </List>
+        </content>
+        
+
+        <footer>
+            <OverflowToolbar>
+                <ToolbarSpacer />
+                <Button type="Emphasized"/>
+            </OverflowToolbar>
+        </footer>
+
+    </Page>
+</mvc:View>

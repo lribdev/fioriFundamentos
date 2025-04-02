@@ -1,0 +1,29 @@
+<core:FragmentDefinition xmlns:form="sap.ui.layout.form"
+   xmlns="sap.m"
+   xmlns:core="sap.ui.core">
+
+	<form:SimpleForm id="SimpleFormChange354"
+			editable="false"
+			layout="ResponsiveGridLayout"
+			labelSpanXL="3"
+			labelSpanL="3"
+			labelSpanM="3"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="4"
+			emptySpanL="4"
+			emptySpanM="4"
+			emptySpanS="0"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<form:content>
+                <Label text="Posição" />
+                <Input value="{dados>position}" />
+            
+                <Label text="Departamento" />
+                <Input value="{ path: 'dados>department', formatter: '.formatter.FormataMaiusculo' }" />
+			</form:content>
+    </form:SimpleForm>
+</core:FragmentDefinition>
